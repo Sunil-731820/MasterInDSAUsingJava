@@ -17,14 +17,17 @@ public class FirstDuplicateElement {
 		for(int j=0;j<size;j++) {
 			System.out.print(arr[j]+" ");
 		}
-		
+		System.out.println("------------------------------");
 		for(int j=0;j<size;j++) {
-			if(arr[j]==arr[j]) {
-				System.out.println("The Duplicate Element Found in the Array");
-				System.out.println(arr[j]);
-				break;
+			for(int k=j+1;k<size;k++) {
+				if(arr[j]==arr[k]) {
+					System.out.println("Duplicate Element Found");
+					System.out.println(arr[j]);
+					break;
+				}
 			}
 		}
+		
 		
 		
 	}
