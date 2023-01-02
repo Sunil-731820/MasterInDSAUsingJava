@@ -1,8 +1,11 @@
 package com.java.ds.ArrayDataStructureProblems;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 public class CommonElementInThreeSortedArrays {
 	
@@ -44,7 +47,8 @@ public class CommonElementInThreeSortedArrays {
 			System.out.println(arr2[i]);
 		}
 //		Converting the Array to List
-		List<int[]> list1 = Arrays.asList(arr);
+		List<Integer> list1 = Arrays.stream(arr).collect(Collectors.toList());
+		
 		System.out.println("The First Array List is ");
 		System.out.println(list1.toString());
 		System.out.println("Sorting the First Array using Stream");
