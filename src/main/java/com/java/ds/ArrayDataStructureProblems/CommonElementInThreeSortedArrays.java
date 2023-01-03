@@ -46,15 +46,69 @@ public class CommonElementInThreeSortedArrays {
 		for(int i=0;i<size2;i++) {
 			System.out.println(arr2[i]);
 		}
-//		Converting the Array to List
-		List<Integer> list1 = Arrays.stream(arr).collect(Collectors.toList());
+//		Sorting The First Array 
+		for(int i=0;i<size;i++) {
+			for(int j=i+1;j<size1;j++) {
+				if(arr[i]>arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+		System.out.println("After Sorting The First Array is ");
+		for(int i=0;i<size;i++) {
+			System.out.println(arr[i]+"");
+		}
 		
-		System.out.println("The First Array List is ");
-		System.out.println(list1.toString());
-		System.out.println("Sorting the First Array using Stream");
-//		List<Integer> list1 = 
+//		Sorting The Second Array 
+		for(int i=0;i<size1;i++) {
+			for(int j=i+1;j<size1;j++) {
+				if(arr1[i]>arr1[j]) {
+					int temp = arr1[i];
+					arr1[i] = arr1[j];
+					arr1[j] = temp;
+				}
+			}
+		}
+		System.out.println("After Sorting The Second Array is ");
+		for(int i=0;i<size1;i++) {
+			System.out.println(arr1[i]+"  ");
+		}
 		
-		
+//		Sorting The Third Array is 
+		for(int i=0;i<size2;i++) {
+			for(int j=i+1;j<size2;j++) {
+				if(arr2[i]>arr2[j]) {
+					int temp = arr2[i];
+					arr2[i] = arr2[j];
+					arr2[j] = temp;
+				}
+			}
+		}
+		System.out.println("After Sorting the Third Array is ");
+		for(int i=0;i<size2;i++) {
+			System.out.println(arr2[i]+ " ");
+		}
+		System.out.println("The Common Element In the Array is ");
+//		Finding The Common Element After the  Sorted Array 
+		int i=0,j=0,k=0;
+		while(i<size && j<size1 && k<size2) {
+			if(arr[i]==arr1[j] && arr1[j]==arr2[k]) {
+				System.out.println(arr[i]+" ");
+				i++;
+				j++;
+				k++;
+			}
+			else if(arr[i]<arr1[j]) {
+				i++;
+			}
+			else if(arr1[j]<arr2[k]) {
+				j++;
+			}else {
+				k++;
+			}
+		}
 		
 		
 	}
