@@ -14,6 +14,10 @@ public class DivisionTestCase {
 	public static void afterClass() {
 		System.out.println("In AfterClass Method");
 	}
+	
+	public static void main(String[] args) {
+		System.out.println("Hello ");
+	}
 
 	
 	
