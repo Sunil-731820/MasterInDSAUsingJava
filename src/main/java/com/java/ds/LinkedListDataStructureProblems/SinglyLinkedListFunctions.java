@@ -12,7 +12,7 @@ class node{
 
 public class SinglyLinkedListFunctions {
 	
-	static node head = null;
+	 static node head = null;
 	
 //	function To add The Data At The Head Positions
 	static void insertathead(int val) {
@@ -25,7 +25,7 @@ public class SinglyLinkedListFunctions {
 	static void display() {
 		node temp = head;
 		while(temp!=null) {
-			System.out.println(temp.data+ " --->");
+			System.out.print(temp.data+ " ->");
 			temp = temp.next;
 		}
 	}
@@ -33,6 +33,7 @@ public class SinglyLinkedListFunctions {
 		System.out.println("I am going to perform All operation Of The LinkedList");
 		insertathead(1);
 		insertathead(2);
+		insertathead(10);
 		display();
 	}
 }
