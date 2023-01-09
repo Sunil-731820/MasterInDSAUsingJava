@@ -21,6 +21,7 @@ class Division{
 public class DivisibilityOfSevenNumber {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number ");
 		int number = sc.nextInt();
 		if(Division.isDivisibleBy7(number)) {
 			System.out.println("The Numberis Divisible By 7");
