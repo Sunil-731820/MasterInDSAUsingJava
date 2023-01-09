@@ -12,13 +12,6 @@ class Reverse{
 		int size = words.length();
 		System.out.println("The Size of That words is ");
 		System.out.println(size);
-		String reverseWords = "";
-		char ch;
-		System.out.println("Printing the Each Character Using for Loop");
-		for(int i=0;i<size;i++) {
-			 ch=words.charAt(i);
-			 reverseWords +=ch;
-		}
 		System.out.println("After The Reversing The String Of The Words");
 		StringBuilder builder = new StringBuilder();
 		builder.append(words);
@@ -29,6 +22,7 @@ class Reverse{
 }
 public class ReverseWordsInGivenString {
 	public static void main(String[] args) {
+		Reverse.getReverseStringOfWord();
 		Reverse.getReverseStringOfWord();
 	}
 
