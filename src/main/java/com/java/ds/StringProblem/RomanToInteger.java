@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 class RomanNumberConversion{
-	public static void getRomanToInt(String s) {
+	public void getRomanToInt(String s) {
 		Map<Character, Integer> map1 = new HashMap<Character, Integer>();
 		map1.put('I', 1);
 		map1.put('V', 5);
