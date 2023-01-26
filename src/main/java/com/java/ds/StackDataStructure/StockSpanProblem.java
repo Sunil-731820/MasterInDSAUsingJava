@@ -18,6 +18,7 @@ class Stock{
 		}
 		
 		
+		
 	}
 }
 public class StockSpanProblem {
