@@ -32,5 +32,7 @@ public class FirstStackExample {
             System.out.print(itr.next()+ "  ");
          }
 
+         // 
+         
     }
 }
