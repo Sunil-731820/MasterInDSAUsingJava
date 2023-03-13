@@ -3,11 +3,11 @@ package com.java.ds.TaskAssignByMe;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-class Employ{
+class Employ1{
 	private int id;
 	private String firstName;
 	private String lastName;
-	public Employ(int id, String firstName, String lastName) {
+	public Employ1(int id, String firstName, String lastName) {
 		super();
 		this.firstName = firstName;
 		this.id = id;
