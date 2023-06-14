@@ -17,25 +17,9 @@ public class DivisionTestCase {
 	
 	public static void main(String[] args) {
 		System.out.println("Hello ");
-		System.out.println("I am callinh Hi Method");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
-		System.out.println("This is Not Working Fines");
+		System.out.println("I am calling Hi Method");
+		afterClass();
+		beforeClass();
 	}
 
 	
